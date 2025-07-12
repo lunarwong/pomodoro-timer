@@ -9,8 +9,7 @@ import '../css/home.css'
 const Home = () => {
     
     //images file 
-    const imgFile = ["bg1.PNG"]
-    const bgImages = imgFile.map(name => `${import.meta.env.BASE_URL}${name}`);
+    const bgImages = ["/bg1.png"]
     const [bgChoose, setBgChoose] = useState(bgImages[0]);
     
 
