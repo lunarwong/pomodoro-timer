@@ -9,7 +9,8 @@ import '../css/home.css'
 const Home = () => {
     
     //images file 
-    const bgImages = ["/pomodoro-timer/bg1.PNG"]
+    const imgFile = ["bg1.PNG"]
+    const bgImages = imgFile.map(name => `${import.meta.env.BASE_URL}${name}`);
     const [bgChoose, setBgChoose] = useState(bgImages[0]);
     
 
