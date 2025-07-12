@@ -3,6 +3,7 @@ import BgCustom from '../components/BgCustom.jsx'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { useState } from 'react';
+import React from 'react';
 
 import '../css/home.css'
 
