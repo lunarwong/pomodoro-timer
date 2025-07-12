@@ -1,0 +1,37 @@
+.container {
+    background-color: var(--white);
+    width: 100%;
+    min-width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.customTab {
+    position: absolute;
+    left: 2%;
+    bottom: 1%;
+
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.nameTag, a {
+    color: var(--black);
+    mix-blend-mode: difference;
+}
+a:hover {
+    color: var(--yellow) !important;
+}
+
+.igIcon {
+    margin-right: 4px;
+    margin-left: 0.4rem;
+}
+
+a {
+    font-weight: bold;
+}

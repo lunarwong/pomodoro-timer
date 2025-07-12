@@ -1,0 +1,151 @@
+:root {
+    --white: #FBFBF9;
+    --black: #3d405b;
+    --blue: #1a659e;
+    --red: #e63946;
+    --yellow: #f9a620;
+    --orange: #f77f00;
+}
+
+h1, h2, h3 {
+    font-family: "Fascinate", system-ui;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+p, button {
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+button, button:hover, button:active, button:focus {
+  outline: 0;
+}
+
+.timerContainer {
+    width:fit-content;
+    height: fit-content;
+    min-width: 45%;
+
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+        
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*timer type*/
+.timerTypeTabs {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.timerTypeTabs button {
+    width: 30%;
+    min-width: 80px;
+    text-align: center;
+    background-color: transparent;
+    opacity: 0.5;
+    border-radius: 24px;
+    transition: ease-in 0.2s;
+}
+
+.timerTypeTabs button:hover {
+    background-color: rgba(251, 251, 249, 0.6);
+    border: none;
+}
+
+.btnActive {
+    background-color: var(--white) !important;
+    font-weight: bold;
+    opacity: 1 !important;
+}
+
+/*timer display*/
+.timer {
+    width: 100%;
+}
+
+#formatTime {
+    font-size: 6rem;
+    font-weight: bold;
+    color: var(--black);
+    mix-blend-mode: multiply;
+}
+
+.timeControl {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+#startStopBtn, #resetBtn {
+    font-size: large;
+}
+
+#startStopBtn{
+    width: 65%;
+    transition: linear 0.1s;
+}
+
+#resetBtn {
+    width: 30%
+}
+
+.iconBtn {
+    margin-right: 1rem !important;
+}
+
+.stopActive {
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+/*Notification*/
+
+.timeUpNotice {
+    width: fit-content;
+    min-width: 360px;
+    min-height: 120px;
+    position: fixed;
+    right: 24px;
+    top: 24px;
+
+    padding: 16px 2rem 16px 2rem;
+
+    border-radius: 24px;
+    background-color: var(--white); 
+
+    /*shadow*/
+    box-shadow: 0 4px 16px rgba(4, 11, 43, 0.3);
+    z-index: 1000;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.closeBtn {
+    position: absolute;
+    right: -16px;
+    top: -16px;
+    font-size: 1rem;
+    border-radius: 16px;
+    border: 1px solid var(--white);
+    background-color: var(--red);
+    color: var(--white);
+
+    
+}

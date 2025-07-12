@@ -1,0 +1,60 @@
+:root {
+    --white: #FBFBF9;
+    --black: #3d405b;
+    --blue: #1a659e;
+    --red: #e63946;
+    --light-yellow: #FCFFC1;
+    --yellow: #f9a620;
+    --orange: #f77f00;
+}
+
+
+
+.navBarBtn {
+    background: none;
+    width: fit-content;
+    max-width: 20px;
+}
+
+.navBarBtn:hover, .navBarBtn:active , .navBarBtn:focus {
+    border: none;
+}
+
+.navBarContainer {
+    position: absolute;
+    bottom: 110%;
+    background-color: var(--white);
+    min-width: 240px;
+    height: 240px;
+
+    border-radius: 12px;
+    padding: 1rem;
+
+    
+
+}
+
+
+.bgOptions {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.bgOptions img {
+    width: 40%;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 4px;
+
+    filter: brightness(80%);
+    transition: filter 0.3s ease; 
+    cursor: pointer;
+
+}
+
+.bgOptions img:hover {
+    filter: brightness(100%);
+    transform: scale(1.05);
+}
