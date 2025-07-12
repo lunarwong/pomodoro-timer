@@ -9,7 +9,7 @@ import '../css/home.css'
 const Home = () => {
     
     //images file 
-    const bgImages = ["/bg1.PNG"]
+    const bgImages = ["/pomodoro-timer/bg1.PNG"]
     const [bgChoose, setBgChoose] = useState(bgImages[0]);
     
 
