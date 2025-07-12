@@ -9,7 +9,7 @@ import '../css/home.css'
 const Home = () => {
     
     //images file 
-    const bgImages = ["/bg1.jpg"]
+    const bgImages = ["/bg1.png"]
     const [bgChoose, setBgChoose] = useState(bgImages[0]);
     
 
