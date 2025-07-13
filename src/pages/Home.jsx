@@ -10,8 +10,12 @@ import '../css/home.css'
 const Home = () => {
     
     //images file 
-    const bgImages = ["/IMG_0771.PNG"]
+    //const bgImages = ["/public/bg1.png"]
+    //const [bgChoose, setBgChoose] = useState(bgImages[0]);
+
+    const bgImages = [`${import.meta.env.BASE_URL}bg1.png`];
     const [bgChoose, setBgChoose] = useState(bgImages[0]);
+
     
 
     return (
@@ -22,8 +26,8 @@ const Home = () => {
                 backgroundImage: `url(${bgChoose})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
-            }}
-        >
+            }}  
+        >        
             <Timer />
         </div>
         <div className='customTab'>
