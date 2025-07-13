@@ -154,7 +154,6 @@ const Timer = () => {
                 </div>
             )}
 
-            //<audio ref={audioRef} src="/ding.mp4" preload="auto" /> 
             <audio ref={audioRef} src={`${import.meta.env.BASE_URL}ding.mp4`} preload="auto" />
 
 

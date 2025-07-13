@@ -11,9 +11,14 @@ const Home = () => {
     
     //images file 
     //const bgImages = ["/public/bg1.png"]
-    //const [bgChoose, setBgChoose] = useState(bgImages[0]);
+    //const bgImages = [`${import.meta.env.BASE_URL}bg1.png`];
+    const baseUrl = import.meta.env.BASE_URL;
+    const imageNames = ["bg1.png"];
 
-    const bgImages = [`${import.meta.env.BASE_URL}bg1.png`];
+    const bgImages = imageNames.map((name) => `${baseUrl}${name}`);
+
+
+    //set background first image
     const [bgChoose, setBgChoose] = useState(bgImages[0]);
 
     
