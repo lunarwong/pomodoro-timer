@@ -10,10 +10,8 @@ import '../css/home.css'
 const Home = () => {
     
     //images file 
-    //const bgImages = ["/public/bg1.png"]
-    //const bgImages = [`${import.meta.env.BASE_URL}bg1.png`];
     const baseUrl = import.meta.env.BASE_URL;
-    const imageNames = ["bg1.png"];
+    const imageNames = ["bg1.png", "bg2.png", "bg3.png"];
 
     const bgImages = imageNames.map((name) => `${baseUrl}${name}`);
 
