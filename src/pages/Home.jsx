@@ -11,7 +11,7 @@ const Home = () => {
     
     //images file 
     const baseUrl = import.meta.env.BASE_URL;
-    const imageNames = ["bg1.png", "bg2.png", "bg3.png"];
+    const imageNames = ["bg1.png"];
 
     const bgImages = imageNames.map((name) => `${baseUrl}${name}`);
 
